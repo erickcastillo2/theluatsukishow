@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.env
+.DS_Store
+*.log
+content/fotos/**/*.jpg
+content/fotos/**/*.jpeg
+content/fotos/**/*.png
+content/fotos/**/*.heic
+content/videos/raw/**/*.mp4
+content/videos/raw/**/*.mov
+content/videos/editados/**/*.mp4
+content/audio/**/*.mp3
+content/audio/**/*.wav
+!**/.gitkeep
