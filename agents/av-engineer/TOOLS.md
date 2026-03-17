@@ -59,21 +59,21 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **REGLA**: solo llamar Gemini cuando hay un mensaje real de Telegram esperando respuesta
 
 ### Los perros del show
-- **Lua** — pelaje claro/dorado (usualmente a la izquierda en fotos de pareja)
-- **Tsuki** — pelaje más oscuro/café (usualmente a la derecha)
+- **Lua** — pelaje negro (usualmente a la izquierda en fotos de pareja)
+- **Tsuki** — pelaje naranja/cafe (usualmente a la derecha)
 - Siempre mencionar ambas en los prompts para coherencia de marca
 
 ### Prompts de referencia para Gemini
 
 **Imagen vertical (Reels/TikTok):**
 ```
-Dos perros adorables, Lua (golden) y Tsuki (café), [acción], fondo [descripción],
+ Dos perros adorables, Lua (negra) y Tsuki (naranja/cafe), [acción], fondo [descripción],
 fotografía profesional estilo Instagram, iluminación natural, colores vibrantes, 9:16
 ```
 
 **Video (Veo 2):**
 ```
-Two cute dogs, one golden (Lua) and one brown (Tsuki), [action], [location],
+ Two cute dogs, one black dog (Lua) and one orange-brown dog (Tsuki), [action], [location],
 cinematic slow motion, natural light, social media vertical format
 ```
 
