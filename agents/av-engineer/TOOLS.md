@@ -77,4 +77,69 @@ Two cute dogs, one golden (Lua) and one brown (Tsuki), [action], [location],
 cinematic slow motion, natural light, social media vertical format
 ```
 
+### CapCut (Desktop App)
+- App: `/Applications/CapCut.app`
+- Bundle ID: `com.lemon.lvoverseas`
+- URL Scheme: `capcut://`
+- Uso: Edición avanzada de video con plantillas, efectos, transiciones y texto animado
+- **Abrir CapCut:**
+  ```bash
+  open -a CapCut
+  # o con URL scheme:
+  open "capcut://"
+  ```
+- **Abrir un archivo de video directo en CapCut:**
+  ```bash
+  open -a CapCut /ruta/al/video.mp4
+  ```
+- **Workflow recomendado:**
+  1. Preparar clips con FFmpeg (recortar, redimensionar, extraer audio)
+  2. Abrir en CapCut para efectos avanzados, plantillas y texto animado
+  3. Exportar desde CapCut en el formato final
+- **Limitaciones:** CapCut no tiene CLI de renderizado — requiere interacción GUI
+- **Tip:** Prepara los assets (clips recortados, audio mezclado, subtítulos SRT) con FFmpeg antes de pasarlos a CapCut para minimizar trabajo manual
+
+### iMovie
+- Estado: **No instalado completamente** (solo placeholder en `/Applications/iMovie.appdownload`)
+- Para instalar: Abrir App Store → buscar iMovie → descargar (gratis)
+- Bundle ID: `com.apple.iMovieApp`
+- **Abrir iMovie:**
+  ```bash
+  open -a iMovie
+  ```
+- **Abrir video en iMovie:**
+  ```bash
+  open -a iMovie /ruta/al/video.mp4
+  ```
+- **AppleScript (una vez instalado):**
+  ```bash
+  osascript -e 'tell application "iMovie" to activate'
+  ```
+- **Workflow recomendado:**
+  1. Preparar clips con FFmpeg
+  2. Importar en iMovie para edición con plantillas de Apple
+  3. Exportar con Share → File
+- **Nota:** iMovie es más limitado que CapCut pero tiene buenas plantillas de trailers
+
+### Workflow de Producción Completo
+
+```
+Media inbound → FFmpeg (trim/resize/audio) → CapCut o iMovie (efectos/plantillas)
+                                            ↓
+                                    Gemini (generar nuevos assets)
+                                            ↓
+                              Output final → ~/.openclaw/workspace/out/
+```
+
+| Herramienta | Mejor para |
+|-------------|------------|
+| FFmpeg | Recortar, redimensionar, extraer audio, convertir formatos, procesamiento batch |
+| CapCut | Efectos avanzados, texto animado, plantillas trendy, transiciones pro |
+| iMovie | Trailers con plantillas Apple, edición simple y rápida |
+| Gemini Imagen 3 | Generar fotos nuevas de Lua y Tsuki desde cero |
+| Gemini Veo 2 | Generar clips de video cortos (~5-8s) |
+| MoviePy | Procesamiento programático de video en Python |
+| Pillow | Procesamiento de imágenes en Python |
+| edge-tts | Narración TTS en español |
+
 Add whatever helps you do your job. This is your cheat sheet.
