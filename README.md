@@ -26,6 +26,7 @@ theluatsukishow/
 │   └── av-engineer/IDENTITY.md
 ├── content/                         # Material de producción
 │   ├── fotos/{lua, tsuki, juntas}   # Fotos de las perritas
+│   ├── publicados/                  # Archivo de piezas ya publicadas + metadata
 │   ├── videos/
 │   │   ├── raw/                     # Videos sin editar
 │   │   ├── editados/                # Videos finales
@@ -89,6 +90,13 @@ Dueños (Telegram) ──→ 👔 CEO ──→ 📋 Scrum Master ──→ Asig
 4. **CEO** presenta propuestas en Telegram para aprobación
 5. **Community Manager** publica el contenido aprobado
 
+## Ingesta Oficial de Material
+
+- Las fotos y videos compartidos en el grupo de Telegram son la fuente oficial de material de trabajo
+- OpenClaw los descarga primero a `~/.openclaw/media/inbound`
+- Un sync local los refleja al repo en `content/fotos/telegram`, `content/videos/telegram` y `content/docs/telegram`
+- El equipo debe trabajar sobre esas carpetas locales para que CEO, Gemini y los demás agentes vean el mismo material
+
 ## Videos Interactivos — Chismes de Reddit
 
 El Programmer crea videos donde miniaturas de Lua y Tsuki narran historias populares de Reddit:
@@ -124,6 +132,19 @@ El Programmer crea videos donde miniaturas de Lua y Tsuki narran historias popul
 - El **CEO** entrega el material final por Telegram
 - **Erick** hace la subida manual a Instagram, TikTok o Facebook
 - Las sesiones abiertas en Instagram Web y TikTok Web pueden servir como apoyo técnico, pero no son el canal oficial de publicación
+
+## Estados del Contenido
+
+- `borrador` — trabajo interno
+- `aprobado` — contenido ya validado
+- `listo para publicar` — archivo final y caption listos para enviarse por Telegram
+- `publicado` — Erick confirmó que ya salió en la red social
+
+## Archivo de Publicados
+
+- Guardar piezas ya publicadas en `content/publicados/`
+- Guardar metadata en `content/publicados/metadata/`
+- La metadata debe incluir al menos: plataforma, fecha y caption final usado
 
 ## Licencia
 

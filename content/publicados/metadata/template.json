@@ -1,0 +1,8 @@
+{
+  "platform": "instagram|tiktok|facebook",
+  "publishedAt": "YYYY-MM-DD HH:MM",
+  "assetFile": "nombre-del-archivo-publicado.mp4",
+  "caption": "Caption final usado",
+  "objective": "presentacion|alcance|engagement|prueba",
+  "notes": "Notas opcionales"
+}
