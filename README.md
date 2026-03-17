@@ -118,6 +118,13 @@ El Programmer crea videos donde miniaturas de Lua y Tsuki narran historias popul
 - Reportar avances del equipo
 - Solicitar credenciales de redes sociales
 
+## Flujo Oficial de Publicación
+
+- El equipo prepara piezas, captions y propuestas
+- El **CEO** entrega el material final por Telegram
+- **Erick** hace la subida manual a Instagram, TikTok o Facebook
+- Las sesiones abiertas en Instagram Web y TikTok Web pueden servir como apoyo técnico, pero no son el canal oficial de publicación
+
 ## Licencia
 
 MIT
