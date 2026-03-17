@@ -100,8 +100,8 @@ cinematic slow motion, natural light, social media vertical format
 - **Tip:** Prepara los assets (clips recortados, audio mezclado, subtítulos SRT) con FFmpeg antes de pasarlos a CapCut para minimizar trabajo manual
 
 ### iMovie
-- Estado: **No instalado completamente** (solo placeholder en `/Applications/iMovie.appdownload`)
-- Para instalar: Abrir App Store → buscar iMovie → descargar (gratis)
+- App: `/Applications/iMovie.app`
+- Estado: **Instalado** ✅
 - Bundle ID: `com.apple.iMovieApp`
 - **Abrir iMovie:**
   ```bash
