@@ -16,7 +16,7 @@ from datetime import datetime
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 OPENCLAW_PASSWORD = os.environ.get("OPENCLAW_GATEWAY_PASSWORD", "")
-OPENCLAW_PORT = os.environ.get("OPENCLAW_PORT", "18789")
+OPENCLAW_PORT = os.environ.get("OPENCLAW_PORT", "39888")
 MODELS = [
     "qwen/qwen3-next-80b-a3b-instruct:free",
     "mistralai/mistral-small-3.1-24b-instruct:free",
