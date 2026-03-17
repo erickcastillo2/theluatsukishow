@@ -1,5 +1,5 @@
 import express from 'express';
-import { MyType } from './types/index';
+import { User } from './types/index';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 // Example route using a type
 app.post('/example', (req, res) => {
-    const data: MyType = req.body;
+    const data: User = req.body;
     // Process data...
     res.status(201).send(data);
 });
